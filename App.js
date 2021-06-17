@@ -1,4 +1,3 @@
-import { template } from '@babel/core';
 import React, { Component } from 'react';
 import { Button, Image, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
@@ -212,5 +211,20 @@ contoh: atom back button, title dan refresh -> molekul header
 - organism (sudah memiliki sebuah fungsi --> gabungan dari bbrp molekul)
 - template (bentuk yang selalu mirip)
 - pages
- */
+
+-atom dan molekul => stateless component (tidak terlalu kompleks atau bisa hidup sendiri)
+- gabungan beberapa atom => molekul
+-containers: tempat dimana state itu hidup (komponen memiliki state, lebih kompleks)
+- organism: ketika komponen tsb generik, bisa digunakan dimana saja (contoh: fungsi search yang sudah ada logicnya)
+- pages: spesifik di page tertentu
+-template: halaman dengan template yang sama
+(contoh: halaman login, logo di atas, dan footer sama juga kayak di register dan forgot password)
+
+-asset: asset dari aplikasi kita simpan
+
+-config: setup khusus projek (contoh: routing)
+- redux: folder redux
+- service: untuk mengatur calling api
+- utils: function yang sering digunakan berulang2 (generic bisa digunakan dimana saja)
+*/
 
